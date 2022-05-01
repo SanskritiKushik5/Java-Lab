@@ -4,6 +4,6 @@ class MyFirstProgram
 {
     public static void main(String arg[])
     {
-        System.out.println("I am enjoying Java");
+        System.out.println("Hi, I am enjoying Java");
     }
 } 

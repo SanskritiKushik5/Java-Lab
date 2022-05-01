@@ -6,7 +6,7 @@ import java.awt.*;
 class MyFrame
 {
     MyFrame(){
-        Frame fr = new Frame("Experiment 5");
+        Frame fr = new Frame("Experiment 6");
         fr.setLayout(new FlowLayout());
 
         CheckboxGroup cg = new CheckboxGroup();
@@ -31,20 +31,29 @@ class MyFrame
         l.add("IT");
         l.setBounds(50, 100, 100, 50);
 
-        Panel p1 = new Panel();
-        Panel p2 = new Panel();
-        p1.add(c1);
-        p1.add(c2);
-        p1.add(ch1);
-        p1.add(ch2);
-        p2.add(ch);
-        p2.add(l);
-        p1.setBackground(Color.YELLOW);
-        p2.setBackground(Color.GREEN);
-        fr.add(p1);
-        fr.add(p2);
+        Button b1=new Button("Button 1");
+        Button b2=new Button("Button 2");
+        
+        TextField t1 = new TextField("I enjoy Java");    
+        t1.setBounds(50, 100, 200, 30); 
+
+        TextArea area = new TextArea("I enjoy Java"); 
+
+        Label l1 = new Label("First Label");  
+
+        fr.add(c1);
+        fr.add(c2);
+        fr.add(ch1);
+        fr.add(ch2);
+        fr.add(ch);
+        fr.add(l);
+        fr.add(b1);
+        fr.add(b2);
+        fr.add(t1);
+        fr.add(area);
+        fr.add(l1);
         fr.setVisible(true);
-        fr.setSize(700, 700);
+        fr.setSize(700, 400);
     }
     public static void main(String arg[]){
         MyFrame obj = new MyFrame();
